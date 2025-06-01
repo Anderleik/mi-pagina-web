@@ -10,7 +10,7 @@
     <div class="perfil-cabecera">
         <h1>HOJA DE VIDA</h1>
         <h2>ANDERSON MILLAN JIMENEZ</h2>
-        <h4>Técnico en Mantenimiento Electromecánico</H4>
+        <h3>Técnico en Mantenimiento Electromecánico</H3>
         <img src="myAvatar.png" alt="foto de perfil" width="200" height="200">
     </div>
     <fieldset>
@@ -34,13 +34,16 @@ Responsable, proactivo y orientado a la solución de problemas técnicos, con ca
         <p><strong>Ciudad:</strong> Bogota</p> <!--dato falso-->
         <p><strong>Telefono:</strong> 3001234567</p> <!--dato falso-->
     </fieldset>
-    <h2>PASA TIEMPOS</h2>
+    <fieldset>
+    <legend><h2>PASA TIEMPOS</h2></legend>
     <ul>
         <li>Leer</li>
         <li>Ver peliculas</li>
         <li>Jugar Futbol</li>
     </ul>
-    <h2>OBJETIVOS</h2>
+    </fieldset>
+    <fieldset>
+    <legend><h2>OBJETIVOS</h2></legend>
     <ol>
         <li>Aprender ingles</li>
         <li>Aprender programacion</li>
@@ -48,7 +51,9 @@ Responsable, proactivo y orientado a la solución de problemas técnicos, con ca
         <li>Comprar carro</li>
         <li>Comprar casa</li>
     </ol>
-    <h2>CALENDARIO</h2>
+    </fieldset>
+    <fieldset>
+    <legend><h2>CALENDARIO</h2></legend>
     <table border="1">
         <thead>
             <tr>
@@ -75,26 +80,31 @@ Responsable, proactivo y orientado a la solución de problemas técnicos, con ca
             </tr>
         </tbody>
     </table>
+    </fieldset>
     <form action="">
-        <fieldset>
-            <legend><h2>CONTACTAME</h2></legend>
+    <fieldset>
+        <legend><h2>CONTACTAME</h2></legend>
+        <div class="form-group">
             <label for="name">Nombre</label>
             <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
-            <br><br>
+        </div>
+        <div class="form-group">
             <label for="telefono">Telefono</label>
             <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu telefono" required>
-            <br><br>
+        </div>
+        <div class="form-group">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
-            <br><br>
-            <label for="mensaje">Mensaje:</label>
-            <br><br>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje" required></textarea>
-            <br><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar">
-        </fieldset>
-    </form>
+        </div>
+        <button type="submit" class="btn-form">Enviar</button>
+        <button type="reset" class="btn-form">Limpiar</button>
+    </fieldset>
+</form>
+>>>>>>> master
     <footer>
     <a href="https://www.facebook.com/">Facebook</a>
     <a href="https://www.instagram.com">Instagram</a>
