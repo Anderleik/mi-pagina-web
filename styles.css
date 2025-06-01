@@ -8,7 +8,19 @@ body {
 
 .perfil-cabecera {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+.perfil-cabecera h1 {
+    margin-bottom: 2px; /* menos espacio debajo del h1 */
+}
+
+.perfil-cabecera h2 {
+    margin-bottom: 6px; /* menos espacio debajo del h2 */
+}
+
+.perfil-cabecera h3 {
+    margin-bottom: 10px; /* puedes ajustar este valor según prefieras */
+    margin-top: 0px; /* elimina el margen superior */
 }
 
 h1 {
@@ -18,7 +30,22 @@ h1 {
     letter-spacing: 2px;
 }
 
-h2, h4 {
+h2 {
+    color: #2980b9;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+legend {
+    border: none;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+h3 {
     color: #2980b9;
     margin-bottom: 10px;
 }
@@ -35,14 +62,18 @@ fieldset {
     border: 2px solid #2980b9;
     border-radius: 8px;
     background: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(44,62,80,0.07);
 }
 
-legend h2 {
-    margin: 0;
-    font-size: 1.2em;
+fieldset p {
+    margin-top: 0px;
+}
+
+fieldset ul,
+fieldset ol {
+    margin-top: 4px;
 }
 
 ul, ol {
@@ -50,7 +81,6 @@ ul, ol {
     border-radius: 8px;
     padding: 15px 30px;
     margin-bottom: 25px;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
 }
 
 table {
@@ -88,6 +118,57 @@ a {
     text-decoration: none;
     transition: background 0.2s;
     font-weight: 500;
+}
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #2980b9;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1.5px solid #2980b9;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #f5f7fa;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 2px solid #2c3e50;
+    outline: none;
+}
+
+.btn-form {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 24px;
+    margin-right: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-form:hover {
+    background: #1c5d8c;
 }
 
 a:hover {
